@@ -4,10 +4,6 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
-.error {
-  border: 1px solid red;
-}
-
 .header {
   height: 105px;
   background-color: #fff;
@@ -31,10 +27,11 @@ body {
   justify-content: space-between;
   padding: 7px 0 8px;
 }
-.header-flex-container .logo-link {
+
+.logo-link {
   padding: 0;
 }
-.header-flex-container .logo-link .logo-oxit {
+.logo-link .logo-oxit {
   width: 85px;
 }
 
@@ -56,9 +53,9 @@ body {
 }
 
 .menu-item {
-  margin-right: 44px;
+  margin-right: 40px;
   position: relative;
-  font-size: 14px;
+  font-size: 16px;
 }
 .menu-item:nth-last-child(2) {
   margin-right: 30px;
@@ -66,12 +63,13 @@ body {
 .menu-item:last-child {
   margin-right: 0;
 }
-.menu-item .menu-link {
+
+.menu-link {
   position: relative;
   text-decoration: none;
   color: #666666;
 }
-.menu-item .menu-link:hover {
+.menu-link:hover {
   color: #337ab7;
 }
 
@@ -94,8 +92,9 @@ body {
   display: none;
 }
 
-/* CONTENT BLOCK */
+/*CONTENT BLOCK */
 .content-block {
+  margin-top: 100px;
   width: 100%;
   height: 800px;
   background-color: #f7f7f7;
@@ -103,6 +102,7 @@ body {
 .content-block .content-flex-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
 }
 .content-block .content-flex-container .left-block {
@@ -112,93 +112,30 @@ body {
   justify-content: center;
   width: 50%;
   height: 800px;
-  margin: 96px 30px 0 0;
   text-align: center;
   color: #333333;
 }
 .content-block .content-flex-container .left-block .left-block-title {
-  font-size: 32px;
+  font-size: 37px;
   margin: 0;
-  font-weight: bold;
-  letter-spacing: 0.35px;
 }
 .content-block .left-block-description {
   margin: 0;
+  width: 90%;
   padding-top: 25px;
   font-size: 20px;
   line-height: 35px;
-  width: 95%;
 }
 
-.right-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 50%;
-  color: #333333;
-}
-.right-block .form-input-text {
-  width: 95%;
-  height: 50px;
-  margin: 2px 0 15px;
-  padding: 0 10px;
-  transition: box-shadow 0.3s ease-in-out;
-  border: 1px solid #ccc;
-}
-.right-block .form-input-text:focus {
-  border: 1px solid #3492fa;
-  outline: none;
-  box-shadow: 0 0 2px 1px #3492fa;
-}
-.right-block .registration-form {
-  width: 100%;
-}
-.right-block .registration-form .form-title {
-  font-size: 22px;
-  margin-bottom: 12px;
-  font-weight: bold;
-  color: #333333;
-}
-.right-block .registration-form .necessarily {
-  color: #ce0808;
-}
-.right-block .registration-form .form-button {
-  padding: 15px 96px;
-  color: #ffffff;
-  background-color: #337ab7;
-  border-radius: 26px;
-  font-size: 14px;
-  margin: 32px 0 0 100px;
-  border: none;
-  cursor: pointer;
-}
-.right-block .registration-form .link {
-  text-decoration: none;
-  color: #007bff;
-}
-
-/* ADAPTIVE */
+/*/////////////////////////////ADAPTIVE///////////////////////////////////////*/
 @media (max-width: 1400px) {
   .container {
     max-width: 1170px;
-  }
-  .form-input-text {
-    width: 95%;
-    height: 50px;
-    margin: 2px 0 15px;
-    padding: 0 10px;
   }
 }
 @media (max-width: 1200px) {
   .container {
     max-width: 970px;
-  }
-  .form-input-text {
-    width: 95%;
-    height: 50px;
-    margin: 2px 0 15px;
-    padding: 0 10px;
   }
 }
 @media (max-width: 992px) {
@@ -223,7 +160,6 @@ body {
   }
   .content-block {
     margin-top: 0;
-    height: 1350px;
   }
   .content-block .content-flex-container {
     display: flex;
@@ -233,8 +169,7 @@ body {
   }
   .content-block .content-flex-container .left-block {
     width: 100%;
-    height: 100%;
-    margin: 140px 0 50px;
+    margin-top: -80px;
   }
   .content-block .content-flex-container .left-block-title {
     font-size: 38px;
@@ -242,32 +177,6 @@ body {
   }
   .content-block .content-flex-container .left-block-description {
     width: 100%;
-  }
-  .content-block .content-flex-container .right-block {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  .content-block .content-flex-container .right-block .registration-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 95%;
-  }
-  .content-block .content-flex-container .right-block .registration-form .form-title {
-    font-size: 28px;
-  }
-  .content-block .content-flex-container .right-block .registration-form .form-button {
-    margin: 32px 0 0 0;
-  }
-  .content-block .content-flex-container .right-block .registration-form .form {
-    width: 100%;
-    align-items: center;
-  }
-  .content-block .content-flex-container .right-block .registration-form .form .form-input-text {
-    width: 97%;
   }
 }
 @media (max-width: 768px) {
@@ -287,13 +196,6 @@ body {
     height: 60px;
     padding: 0;
     z-index: 999;
-  }
-  .header-flex-container .logo-block {
-    padding-top: 4px;
-    z-index: 4;
-  }
-  .header-flex-container .logo-block .logo-oxit {
-    width: 50px;
   }
   .header-menu {
     position: fixed;
@@ -378,6 +280,13 @@ body {
   .menu-list li:last-child {
     margin: 20px 0 0 0;
   }
+  .logo-block {
+    padding-top: 4px;
+    z-index: 4;
+  }
+  .logo-block .logo-oxit {
+    width: 50px;
+  }
   .content-block {
     margin-top: 0;
   }
@@ -389,7 +298,7 @@ body {
   }
   .content-block .content-flex-container .left-block {
     width: 100%;
-    margin-top: 90px;
+    margin-top: -80px;
   }
   .content-block .content-flex-container .left-block .left-block-title {
     font-size: 34px;
@@ -401,50 +310,26 @@ body {
 }
 @media (max-width: 576px) {
   .container {
-    max-width: 280px;
+    max-width: 300px;
   }
   .content-block {
     width: 100%;
   }
   .content-block .content-flex-container {
     width: 100%;
-    align-items: center;
-    justify-content: center;
   }
   .content-block .content-flex-container .left-block {
     width: 100%;
-    margin-top: 90px;
+    margin-top: -20px;
   }
   .content-block .content-flex-container .left-block .left-block-title {
     font-size: 25px;
     margin: 0;
   }
   .content-block .content-flex-container .left-block .left-block-description {
-    width: 100%;
+    width: 95%;
     font-size: 15px;
     padding: 14px 0 0 0;
-  }
-  .content-block .content-flex-container .right-block {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  .content-block .content-flex-container .right-block .registration-form {
-    width: 100%;
-    align-items: center;
-  }
-  .content-block .content-flex-container .right-block .registration-form .form-title {
-    font-size: 20px;
-    margin-bottom: 12px;
-  }
-  .content-block .content-flex-container .right-block .registration-form .form {
-    width: 100%;
-  }
-  .content-block .content-flex-container .right-block .registration-form .form .form-input-text {
-    width: 92%;
-  }
-  .content-block .content-flex-container .right-block .registration-form .form-button {
-    padding: 20px 45px;
   }
 }
 /*# sourceMappingURL=main.css.map */
