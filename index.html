@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/.main.css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>4 макет</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
                 <div class="header-menu">
                     <ul class="menu-list">
                         <li class="menu-item"><a href="#" class="menu-link">Головна</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Програма курсу</a></li>
+                        <li class="menu-item"><a href="#1" class="menu-link">Програма курсу</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Відгуки про курс</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Відео</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Ментори</a></li>
@@ -34,7 +35,7 @@
         </div>
     </header>
 
-    <div class="content-block">
+    <section class="content-block">
         <div class="container">
             <div class="content-flex-container">
                 <div class="left-block">
@@ -82,9 +83,86 @@
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
+    <section class="content course-block">
+        <div class="container">
+            <div class="course-flex-container">
+                <h1 id="1" class="course-block-title">Курс «Розробка сайтів»</h1>
+                <div class="swiper slider course-block-items">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide course-block-item">
+                            <div class="content-card">
+                                <img src="img/icons/course-icon-1.png" alt="loading" class="course-icon">
+                                <h2 class="course-item-title">Розробка сайтів на WordPress</h2>
+                                <div class="line"></div>
+                                <p class="course-item-description">Курс складається з коротких навчальних відео, на яких
+                                    ти пізнаєш основи WordPress,
+                                    навчишся створювати сайти різної складності від блогів до інтернет-магазинів. Всі
+                                    знання
+                                    закріпиш за допомогою тестових завдань.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide course-block-item">
+                            <div class="content-card">
+                                <img src="img/icons/course-icon-2.png" alt="loading" class="course-icon">
+                                <h2 class="course-item-title">Розробка сайтів на Drupal 8</h2>
+                                <div class="line"></div>
+                                <p class="course-item-description">Для створення чудових сайтів на Drupal 8, цеглинка за
+                                    цеглинкою, ти пізнаєш секрети
+                                    основних та додаткових Drupal-модулів(Views, Rules, Panels, Paragraph та багатьох
+                                    інших).</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide course-block-item">
+                            <div class="content-card">
+                                <img src="img/icons/course-icon-3.png" alt="loading" class="course-icon">
+                                <h2 class="course-item-title">Ознайомленння з тестуванням</h2>
+                                <div class="line"></div>
+                                <p class="course-item-description">Ти дізнаєшся про забезпечення якості в контексті
+                                    різних моделей розробки ПЗ. Також
+                                    QA-спеціаліст розкаже про види тестування(функціональне, регресивне, системне
+                                    тестування
+                                    швидкості тощо).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="statistics-block ">
+        <div class="container">
+            <div class="statistics-flex-container">
+                <div class="adaptive-container">
+                    <div class="statistic-item">
+                        <img src="img/icons/statistic-icon-1.png" width="85px" height="60px" class="statistic-icon">
+                        <h2 class="statistic-number">25</h2>
+                        <p class="statistic-description">курсів організовано</p>
+                    </div>
+                    <div class="statistic-item">
+                        <img src="img/icons/statistic-icon-2.png" width="85px" height="60px" class="statistic-icon">
+                        <h2 class="statistic-number">836</h2>
+                        <p class="statistic-description">годин занять проведено</p>
+                    </div>
+                </div>
+                <div class="adaptive-container">
+                    <div class="statistic-item">
+                        <img src="img/icons/statistic-icon-3.png" width="85px" height="60px" class="statistic-icon">
+                        <h2 class="statistic-number">500</h2>
+                        <p class="statistic-description">студентів навчано</p>
+                    </div>
+                    <div class="statistic-item">
+                        <img src="img/icons/statistic-icon-4.png" width="85px" height="60px" class="statistic-icon">
+                        <h2 class="statistic-number">120</h2>
+                        <p class="statistic-description">випускників курсу працевлаштовано</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
