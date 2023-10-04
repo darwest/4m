@@ -8,7 +8,7 @@ gulp.task('sass-compile', function(){
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./css/.main.css'))
+        .pipe(gulp.dest('./css'))
 })
 gulp.task('watch', function(){
     gulp.watch('./scss/**/*.scss', gulp.series('sass-compile'))

@@ -181,3 +181,24 @@ window.addEventListener('DOMContentLoaded', () => {
         someFunc
     );
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const mySwiper = new Swiper('.slider-container', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true,
+        },
+    });
+});
+

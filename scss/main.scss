@@ -1,5 +1,6 @@
 $primary-color: #007bff;
 $hover-color: #0056b3;
+
 @font-face {
   font-family: 'OpenSans';
   src: url('/fonts/OpenSans-Light.woff2') format('woff2'),
@@ -329,6 +330,50 @@ body {
   margin: 0;
 }
 
+.slider-mentors-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+
+  .swiper-wrapper {
+    min-height: 100%;
+
+    .slider-title {
+      font-size: 30px;
+      color: rgba(30, 29, 29, 0.87);
+    }
+
+    .image-slider {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+
+      .img-mentor {
+        width: 350px;
+        height: 350px;
+        margin:0 40px;
+      }
+
+      .about-mentor {
+        text-align: left;
+        margin: 0 40px 50px;
+        .name-mentor {
+          margin: 0 0 30px 0;
+          color: #007bff;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
 /* ADAPTIVE */
 
 @media (max-width: 1400px) {
@@ -637,7 +682,25 @@ body {
       margin-bottom: 40px;
     }
   }
+  .image-slider {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .about-mentor {
+      margin: 0;
 
+      .name-mentor {
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      p {
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
