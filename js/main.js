@@ -202,3 +202,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+    $(document).ready(function(){
+    $('.slider-response').slick({
+        dots: true, // Показувати крапки-навігацію
+        infinite: true, // Безкінечний слайдер
+        speed: 500, // Швидкість перемикання слайдів (в мілісекундах)
+        slidesToShow: 1, // Кількість видимих слайдів одночасно
+        slidesToScroll: 1 // Кількість слайдів, які перемикаються за один раз
+    });
+});
+function initMap() {
+    let mapOptions = {
+        center: { lat: 51.5074, lng: -0.1278 }, // Координати центру карти (змініть на свої)
+        zoom: 10, // Рівень зуму
+    };
+    let map = new google.maps.Map(document.getElementById('map'), mapOptions);
+}

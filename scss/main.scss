@@ -294,7 +294,7 @@ body {
 /*STATISTICS BLOCK*/
 .statistics-block {
   width: 100%;
-  background-color: #3498db;
+  background-color: #3498DB;
   height: 300px;
   display: flex;
   align-items: center;
@@ -330,6 +330,49 @@ body {
   margin: 0;
 }
 
+
+/*VIDEO BLOCK*/
+
+.video-block {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  box-sizing: border-box;
+  background-color: #F7F7F7;
+
+  .video-title {
+    margin: 5px 0 0 0;
+    text-align: center;
+    font-size: 35px;
+    color: rgba(51, 51, 51, 0.91);
+  }
+
+  .video-text {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+
+  .video-wrapper {
+    margin: 0 auto;
+    max-width: 1020px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 30px;
+
+     iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+       height: 100%;
+    }
+  }
+}
+
+/*OUR MENTORS*/
+
 .slider-mentors-block {
   display: flex;
   flex-direction: column;
@@ -340,14 +383,14 @@ body {
 .slider-container {
   overflow: hidden;
   position: relative;
-
+  .slider-title {
+    font-size: 35px;
+    color: rgba(51, 51, 51, 0.91);
+    text-align: center;
+  }
   .swiper-wrapper {
     min-height: 100%;
 
-    .slider-title {
-      font-size: 30px;
-      color: rgba(30, 29, 29, 0.87);
-    }
 
     .image-slider {
       display: flex;
@@ -357,12 +400,13 @@ body {
       .img-mentor {
         width: 350px;
         height: 350px;
-        margin:0 40px;
+        margin: 0 40px;
       }
 
       .about-mentor {
         text-align: left;
         margin: 0 40px 50px;
+
         .name-mentor {
           margin: 0 0 30px 0;
           color: #007bff;
@@ -374,7 +418,74 @@ body {
   }
 }
 
+/*WHAT STUDENTS OF OUR COURSES SAY*/
+.slider-responses {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .slider-response-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 40px 0;
+
+    .slider-item {
+      width: 70%;
+
+      .response-text {
+        display: inline;
+      }
+
+      .quotes {
+        font-size: 60px;
+        margin: 0;
+        color: rgba(54, 54, 54, 0.42);
+        display: inline;
+      }
+
+      .name-student {
+        margin: 0;
+        font-weight: bold;
+        color: #1e1e1e;
+      }
+
+      .student-prof {
+        margin: 0;
+        font-style: italic;
+      }
+    }
+  }
+
+  .slider-response-title {
+    text-align: center;
+    color: rgba(19, 19, 19, 0.85);
+    margin: 0;
+    font-weight: bold;
+  }
+}
+
+
+
 /* ADAPTIVE */
+@media (max-width: 1020px) {
+  .video-wrapper {
+    width: 90%;
+    max-height: 270px;
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
 
 @media (max-width: 1400px) {
   .container {
@@ -398,6 +509,7 @@ body {
     margin: 2px 0 15px;
     padding: 0 10px
   }
+
 }
 
 @media (max-width: 992px) {
@@ -487,6 +599,26 @@ body {
   .statistic-item {
     width: 50%;
     text-align: center;
+  }
+  .image-slider {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .about-mentor {
+      margin: 0;
+
+      .name-mentor {
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      p {
+        text-align: center;
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -687,6 +819,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
     .about-mentor {
       margin: 0;
 
@@ -699,6 +832,15 @@ body {
         text-align: center;
         margin: 0;
       }
+    }
+  }
+  .video-wrapper {
+    max-width: 400px;
+    height: 50px;
+
+    iframe {
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -787,5 +929,10 @@ body {
     .statistic-number {
       font-size: 18px;
     }
+  }
+  .img-mentor {
+    width: 150px;
+    height: 150px;
+
   }
 }

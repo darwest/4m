@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/.main.css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>4 макет</title>
 </head>
 <body>
@@ -23,19 +26,19 @@
 
                 <div class="header-menu">
                     <ul class="menu-list">
-                        <li class="menu-item"><a href="#" class="menu-link">Головна</a></li>
+                        <li class="menu-item"><a href="#0" class="menu-link">Головна</a></li>
                         <li class="menu-item"><a href="#1" class="menu-link">Програма курсу</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Відгуки про курс</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Відео</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Ментори</a></li>
-                        <li class="menu-item-button"><a href="#" class="menu-link-button">Подати заявку</a></li>
+                        <li class="menu-item"><a href="#2" class="menu-link">Відгуки про курс</a></li>
+                        <li class="menu-item"><a href="#3" class="menu-link">Відео</a></li>
+                        <li class="menu-item"><a href="#4" class="menu-link">Ментори</a></li>
+                        <li class="menu-item-button"><a href="#5" class="menu-link-button">Подати заявку</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="content-block">
+    <section class="content-block" id="0">
         <div class="container">
             <div class="content-flex-container">
                 <div class="left-block">
@@ -49,7 +52,7 @@
                         курсу 3 серпня.
                     </p>
                 </div>
-                <div class="right-block">
+                <div class="right-block" id="5">
                     <div class="registration-form">
                         <div class="form-title">Зареєструватися на курси</div>
                         <form id="form" class="form">
@@ -84,10 +87,11 @@
             </div>
         </div>
     </section>
-    <section class="content course-block">
+
+    <section class="content course-block" id="1">
         <div class="container">
             <div class="course-flex-container">
-                <h1 id="1" class="course-block-title">Курс «Розробка сайтів»</h1>
+                <h1 class="course-block-title">Курс «Розробка сайтів»</h1>
                 <div class="swiper slider course-block-items">
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide course-block-item">
@@ -131,29 +135,34 @@
             </div>
         </div>
     </section>
+
     <section class="statistics-block ">
         <div class="container">
             <div class="statistics-flex-container">
                 <div class="adaptive-container">
                     <div class="statistic-item">
-                        <img src="img/icons/statistic-icon-1.png" alt="loading" width="85px" height="60px" class="statistic-icon">
+                        <img src="img/icons/statistic-icon-1.png" alt="loading" width="85px" height="60px"
+                             class="statistic-icon">
                         <h2 class="statistic-number">25</h2>
                         <p class="statistic-description">курсів організовано</p>
                     </div>
                     <div class="statistic-item">
-                        <img src="img/icons/statistic-icon-2.png"  alt="loading" width="85px" height="60px" class="statistic-icon">
+                        <img src="img/icons/statistic-icon-2.png" alt="loading" width="85px" height="60px"
+                             class="statistic-icon">
                         <h2 class="statistic-number">836</h2>
                         <p class="statistic-description">годин занять проведено</p>
                     </div>
                 </div>
                 <div class="adaptive-container">
                     <div class="statistic-item">
-                        <img src="img/icons/statistic-icon-3.png"  alt="loading" width="85px" height="60px" class="statistic-icon">
+                        <img src="img/icons/statistic-icon-3.png" alt="loading" width="85px" height="60px"
+                             class="statistic-icon">
                         <h2 class="statistic-number">500</h2>
                         <p class="statistic-description">студентів навчано</p>
                     </div>
                     <div class="statistic-item">
-                        <img src="img/icons/statistic-icon-4.png" alt="loading" width="85px" height="60px" class="statistic-icon">
+                        <img src="img/icons/statistic-icon-4.png" alt="loading" width="85px" height="60px"
+                             class="statistic-icon">
                         <h2 class="statistic-number">120</h2>
                         <p class="statistic-description">випускників курсу працевлаштовано</p>
                     </div>
@@ -162,63 +171,164 @@
         </div>
     </section>
 
-    <section class="slider">
+    <!-- <div class="slider" id="2">
+         <div class="container">
+             <div class="slider-response-block">
+                 <h2 class="slider-response-title">Що кажуть студенти наших курсів</h2>
+                 <div class="slider-response">
+                     <div class="slider-item">
+                         <p class="quotes">❝</p>
+                         <p class="response-text">Під час проходження курсів Drupal y школі Ох Т я навчився
+                             створювати не досить складні сайти та знайшов справу, якою хочу займатись. Після
+                             успішного завершення курсів мені надали можливість продовжити навчання вже в якості
+                             Intern Site Builder.
+                             Зараз я можу сказати, що Drupal та ОхіТ повністю змінили моє життя.</p>
+                         <p class="quotes">❞</p>
+                         <p class="name-student">Коля</p>
+                         <p class="student-prof">Drupal-developer</p>
+                     </div>
+                     <div class="slider-item">
+                         <p class="quotes">❝</p>
+                         <p class="response-text">Під час проходження курсів Drupal y школі Ох Т я навчився
+                             створювати не досить складні сайти та знайшов справу, якою хочу займатись. Після
+                             успішного завершення курсів мені надали можливість продовжити навчання вже в якості
+                             Intern Site Builder.
+                             Зараз я можу сказати, що Drupal та ОхіТ повністю змінили моє життя.</p>
+                         <p class="quotes">❞</p>
+                         <p class="name-student">Коля</p>
+                         <p class="student-prof">Drupal-developer</p>
+                     </div>
+                     <div class="slider-item">
+                         <p class="quotes">❝</p>
+                         <p class="response-text">Під час проходження курсів Drupal y школі Ох Т я навчився
+                             створювати не досить складні сайти та знайшов справу, якою хочу займатись. Після
+                             успішного завершення курсів мені надали можливість продовжити навчання вже в якості
+                             Intern Site Builder.
+                             Зараз я можу сказати, що Drupal та ОхіТ повністю змінили моє життя.</p>
+                         <p class="quotes">❞</p>
+                         <p class="name-student">Коля</p>
+                         <p class="student-prof">Drupal-developer</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     -->
+    <section class="video-block" id="3">
         <div class="container">
-        <div class="slider-container slider-mentors-block">
-            <h2 class="slider-title">Наші ментори</h2>
-            <div class="swiper-wrapper ">
-                <div class="swiper-slide">
-                    <div class="image-slider">
-                        <img src="img/viktor.png" alt="Loading" class="img-mentor">
-                        <div class="about-mentor">
-                            <p class="name-mentor">Віктор</p>
-                            <p>Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії InternetDevels, Віктор
-                                Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.<br><br>
-                                Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все -- саморозвиток для нього не закінчується жодної хвилини.<br><br>
-                                На книжкових Віктора полицях - сотні прочитаних книг про управління і не тільки. А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
-                                Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.<br><br>
-                                Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке
-                                пропустите? Записуйтесь уже зараз!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-slider">
-                        <img src="img/mark.png" alt="Loading" class="img-mentor">
-                        <div class="about-mentor">
-                            <p class="name-mentor">Марк</p>
-                            <p>Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії InternetDevels, Віктор
-                                Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.<br><br>
-                                Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все -- саморозвиток для нього не закінчується жодної хвилини.<br><br>
-                                На книжкових Віктора полицях - сотні прочитаних книг про управління і не тільки. А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
-                                Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.<br><br>
-                                Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке
-                                пропустите? Записуйтесь уже зараз!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-slider">
-                        <img src="img/vova.png" alt="Loading"  class="img-mentor">
-                        <div class="about-mentor">
-                            <p class="name-mentor">Вова</p>
-                            <p>Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник і СЕО компанії InternetDevels, Віктор
-                                Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.<br><br>
-                                Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все -- саморозвиток для нього не закінчується жодної хвилини.<br><br>
-                                На книжкових Віктора полицях - сотні прочитаних книг про управління і не тільки. А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
-                                Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.<br><br>
-                                Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке
-                                пропустите? Записуйтесь уже зараз!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
+        <h2 class="video-title">Відео</h2>
+            <p class="video-text">Lorem Ipsum - це текст-"риба", що
+                використовується в друкарстві та дизайні. Lorem Ipsum є, фактично,
+                стандартною "рибою" аж з XVI
+                сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила пʼять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона
+                популяризувалась в 60-их роках
+                минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге
+                нещодавно завдяки програмам
+                комп'ютерного верстування на
+                кшталт Aldus Pagemaker, Ki
+                використовували різні версії Lorem
+                Ipsur</p>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/JLHvS0qR5Lw?rel=0"  allowfullscreen></iframe>
         </div>
+    </div>
+    </section>
+
+    <section class="slider-mentors" id="4">
+        <div class="container">
+            <div class="slider-container slider-mentors-block">
+                <h2 class="slider-title">Наші ментори</h2>
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide">
+                        <div class="image-slider">
+                            <img src="img/viktor.png" alt="Loading" class="img-mentor">
+                            <div class="about-mentor">
+                                <p class="name-mentor">Віктор</p>
+                                <p>Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом
+                                    управлінець із величезним досвідом! Сам засновник і СЕО компанії InternetDevels,
+                                    Віктор
+                                    Левандовський, висловив бажання бути викладачем на курсах
+                                    проект-менеджменту.<br><br>
+                                    Віктору є про що розповісти. Він знає все про створення та керування великими
+                                    компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він
+                                    ніколи не скаже, що знає все -- саморозвиток для нього не закінчується жодної
+                                    хвилини.<br><br>
+                                    На книжкових Віктора полицях - сотні прочитаних книг про управління і не тільки. А
+                                    от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього
+                                    здійснення.
+                                    Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.<br><br>
+                                    Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви
+                                    таке
+                                    пропустите? Записуйтесь уже зараз!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-slider">
+                            <img src="img/mark.png" alt="Loading" class="img-mentor">
+                            <div class="about-mentor">
+                                <p class="name-mentor">Марк</p>
+                                <p>Марк є професіоналом із багаторічним досвідом роботи в різних сферах. Протягом
+                                    останніх двох років він зосередився на управлінні проектами, де планував,
+                                    організовував і керував різними проектами, спільно працюючи з командами для
+                                    досягнення цілей проектів. Марк має глибокі знання в галузі управління проектами і
+                                    використовує інструменти, такі як Agile та Scrum, для досягнення успіху.<br><br>
+
+                                    Окрім його експертизи в управлінні проектами, Марк також набув досвіду в управлінні
+                                    людськими ресурсами, де він займався наймом, навчанням та розвитком співробітників.
+                                    Він володіє навичками управління продуктивністю і залученням працівників,
+                                    дотримуючись найкращих практик в цій галузі.<br><br>
+
+                                    Крім того, Марк є захопленим дизайном і може використовувати свої навички графічного
+                                    дизайну для створення ефективних маркетингових матеріалів, які не лише виконують
+                                    свої функції, але й виглядають візуально привабливо. Він завжди готовий
+                                    використовувати свою різноманітну експертизу і досвід для розв'язання нових викликів
+                                    і здійснення нових можливостей.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-slider">
+                            <img src="img/vova.png" alt="Loading" class="img-mentor">
+                            <div class="about-mentor">
+                                <p class="name-mentor">Вова</p>
+                                <p>Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом
+                                    управлінець із величезним досвідом! Сам засновник і СЕО компанії InternetDevels,
+                                    Віктор
+                                    Левандовський, висловив бажання бути викладачем на курсах
+                                    проект-менеджменту.<br><br>
+                                    Віктору є про що розповісти. Він знає все про створення та керування великими
+                                    компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він
+                                    ніколи не скаже, що знає все -- саморозвиток для нього не закінчується жодної
+                                    хвилини.<br><br>
+                                    На книжкових Віктора полицях - сотні прочитаних книг про управління і не тільки. А
+                                    от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього
+                                    здійснення.
+                                    Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.<br><br>
+                                    Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви
+                                    таке
+                                    пропустите? Записуйтесь уже зараз!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </section>
+
+
+
+ <footer>
+        <div id="map" style="height: 400px; width: 100%;"></div>
+    </footer>
 </div>
-<script src="js/main.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://maps.app.goo.gl/w8sxZpFTrjqWYHkS7" async defer></script>
+
+<script src="js/main.js"></script>
 </body>
 </html>
