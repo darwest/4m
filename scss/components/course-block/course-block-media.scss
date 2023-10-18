@@ -1,0 +1,21 @@
+
+@media (max-width: 10000px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .swiper-pagination {
+    display: block;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .course-flex-container {
+    .course-block-title{
+      font-size: 24px;
+    }
+  }
+}

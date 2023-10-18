@@ -1,0 +1,39 @@
+@import "../../common/_mixins";
+@import "../../common/reset";
+
+.video-block {
+  @include width-value(100%);
+  margin:0 auto;
+  padding: 50px 0 60px;
+  box-sizing: border-box;
+  background-color: $background-grey;
+
+  .video-title {
+    margin: 10px 0;
+    @include text-styles($title-font-size, bold, $title-primary-color);
+    text-align: center;
+  }
+
+  .video-text {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+
+  .video-wrapper {
+    @include position(relative);
+    @include height-value(500px);
+    max-width: 1020px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    margin: 0 auto;
+
+    iframe {
+      @include position(absolute);
+      @include width-height-value(100%, 100%);
+      top: 0;
+      left: 0;
+    }
+  }
+}
+@import "video-media";

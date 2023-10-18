@@ -1,0 +1,93 @@
+@import "../../common/_mixins";
+@import "../../common/reset";
+
+.slider-responses {
+  padding: 80px 0 70px;
+
+  .sliders {
+    @include width-value(85%);
+    margin: 0 auto;
+
+    .slider-block {
+      .name-student {
+        @include text-styles(18px, bold, #1e1e1e);
+        text-align: center;
+        margin: 15px 0 0;
+      }
+
+      .student-prof {
+        font-style: italic;
+        text-align: center;
+        margin: 5px 0 110px;
+      }
+
+      .response-item {
+        height: 200px;
+        @include flex-container(row, space-between, center);
+
+        .quote1 {
+          @include text-styles(85px, normal, rgba(54, 54, 54, 0.42));
+          align-self: flex-end;
+          order: 1;
+          margin: 1px 10px 95px 0;
+        }
+
+        .response-text {
+          order: 2;
+          flex-grow: 1;
+          text-align: center;
+          font-size: 22px;
+          line-height: 35px;
+          @extend %reset-margin-padding;
+        }
+
+        .quote2 {
+          align-self: flex-start;
+          order: 3;
+          margin: 110px 0 0 10px;
+          @include text-styles(85px, normal, rgba(54, 54, 54, 0.42));
+        }
+      }
+    }
+  }
+
+  .slider-response-title {
+    @include text-styles($title-font-size, bold, $title-primary-color);
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  .slick-dots {
+    @include position(absolute);
+    left: 47%;
+    display: flex;
+    list-style: none;
+    @include padding-margin(0, 0 8px 0 0);
+
+    li {
+      font-size: 0;
+    }
+
+    button {
+      @include button-style(#AEAEAE, 0, #fff, 50%, 0);
+      @include width-height-value(12px, 12px);
+      border: none;
+      margin: 0 4px;
+    }
+  }
+  .slick-active {
+    button {
+      background: #666666;
+    }
+  }
+  .slick-prev {
+    display: none
+  }
+
+  .slick-next {
+    display: none
+  }
+}
+
+@import "slider-responses-media";

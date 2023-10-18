@@ -1,0 +1,152 @@
+@import "../../common/_mixins";
+@import "../../common/_variables";
+@media (max-width: 992px) {
+  .header {
+    .header-flex-container {
+      .header-menu {
+        .menu-list {
+          .menu-item {
+            margin-right: 20px;
+            position: relative;
+            font-size: 13px;
+
+            &:nth-last-child(2) {
+              margin-right: 14px;
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+
+          .menu-item-button {
+            padding: 12px 20px;
+            border-radius: 26px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    @include z-index(999);
+    @include width-height-value(100%, 60px);
+
+    & .active {
+      box-shadow: none;
+    }
+
+    .header-flex-container {
+      @include flex-container(row, space-between, center);
+      @include width-height-value(100%, 60px);
+      @include z-index(999);
+      padding: 0;
+
+      .logo-block {
+        padding-top: 6px;
+        @include z-index(4);
+
+        .logo-link {
+          .logo-oxit {
+            @include width-height-value(50px, 50px);
+          }
+        }
+      }
+
+
+      .header-menu {
+        position: fixed;
+        top: -150%;
+        left: 0;
+        @include width-height-value(100%, 400px);
+        background-color: $background-white;
+        color: #666666;
+        @include z-index(1);
+
+        &.active {
+          top: 0;
+          box-shadow: 0 0 10px 4px #d7d7d7;
+        }
+        .menu-list {
+          @include flex-container(column, center, center);
+          padding: 0;
+          margin: 0;
+
+         .menu-item{
+            margin: 28px 0 0 0;
+            font-size: 18px;
+
+            &:last-child {
+              margin: 20px 0 ;
+            }
+           &:nth-last-child(2) {
+             margin:20px 0 15px;
+           }
+          }
+        }
+      }
+
+      .burger-menu {
+        @include flex-container(row, center, center);
+        @include width-height-value(37px, 24px);
+        @include button-style(#3883c4, 14px, $text-color, 3px, 2px);
+        @include z-index(99);
+      }
+
+      .menu-burger-block {
+        display: block;
+        @include position(relative);
+        @include width-height-value(14px, 8px);
+        @include z-index(4);
+        padding: 2px 2px;
+
+        & span {
+          @include position(absolute);
+          @include width-height-value(100%, 2px);
+          background-color: $background-white;
+          left: 0;
+          top: 5px;
+          transition: all 0.3s ease 0s;
+        }
+
+        &.active {
+          &::before {
+            transform: rotate(45deg);
+            top: 5px;
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+            bottom: 5px;
+          }
+
+          span {
+            transform: scale(0);
+          }
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          background-color: $background-white;
+          @include position(absolute);
+          @include width-height-value(100%, 2px);
+          left: 0;
+          transition: all 0.3s ease 0s;
+        }
+
+        &::before {
+          top: 0;
+        }
+
+        &::after {
+          bottom: 0;
+        }
+      }
+
+    }
+  }
+}

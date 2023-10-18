@@ -1,0 +1,77 @@
+@import "../../common/_mixins";
+
+.content-block {
+  @include width-height-value(100%, 800px);
+  background-color: $background-grey;
+
+  .content-flex-container {
+    @include flex-container(row, center, stretch);
+    width: 100%;
+
+    .left-block {
+      @include flex-container(column, center, center);
+      @include width-height-value(50%, 800px);
+      margin: 96px 30px 0 0;
+      text-align: center;
+
+      .left-block-title {
+        @include text-styles(32px, bold, $title-primary-color);
+        margin: 0;
+        letter-spacing: 2px;
+      }
+      .left-block-description {
+        @include padding-margin(25px 0 0,0);
+        font-size: 20px;
+        line-height: 35px;
+        @include width-value(95%);
+      }
+    }
+
+    .right-block {
+      @include flex-container(column, center, center);
+      @include width-value(50%);
+
+      .form-input-text {
+        @include width-height-value(95%, 50px);
+        @include padding-margin(0 10px, 2px 0 15px);
+        transition: box-shadow 0.3s ease-in-out;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      label {
+        @include text-styles(14px, bold, #363636);
+        margin-left: 4px;
+
+      }
+
+      .form-input-text:focus {
+        border: 1px solid #7bb2f1;
+        outline: none;
+        box-shadow: 0 0 2px 1px #3492fa;
+      }
+
+      .registration-form {
+        @include width-value(100%);
+
+        .form-title {
+          @include text-styles(22px, bold, $title-primary-color);
+          margin-bottom: 15px;
+          letter-spacing: 1px;
+        }
+
+        .form-button {
+          @include button-style($button-background-color, 14px, $text-color-white, 26px, 15px 96px) ;
+          margin: 32px 0 0 100px;
+        }
+
+        .link {
+          @include link-style(none, #007bff);
+        }
+      }
+    }
+  }
+}
+
+
+@import "content-media";

@@ -1,0 +1,47 @@
+@import "../../common/_mixins";
+
+@media (max-width: 768px) {
+  .footer-block1 {
+    @include height-value(300px);
+
+    .footer-block-container {
+      @include height-value(100%);
+      @include flex-container(column, space-around, center);
+
+      .adaptive-footer-container {
+        margin: 21px 0;
+
+        .footer-block-item {
+
+          .icon-footer {
+            @include width-value(40px);
+
+          }
+
+          .title-footer-block-item {
+            font-size: 14px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-block1 {
+    @include height-value(264px);
+    .footer-block-container {
+      .adaptive-footer-container {
+        &:first-child {
+          margin: 26px 6px 10px;
+        }
+        margin: 10px 6px 26px;
+        width: 90%;
+      }
+    }
+  }
+}

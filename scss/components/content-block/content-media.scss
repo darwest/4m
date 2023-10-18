@@ -1,0 +1,159 @@
+@import "../../common/_mixins";
+
+@media (max-width: 1400px) {
+  .form-input-text {
+    @include width-height-value(95%, 50px);
+    @include padding-margin(0 10px, 2px 0 15px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .response-item {
+    height: 220px;
+  }
+  .content-block {
+    .content-flex-container {
+      .right-block {
+        .registration-form {
+          .form-button {
+            margin-left: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .content-block {
+    margin-top: 0;
+    @include height-value(1200px);
+
+    .content-flex-container {
+      @include flex-container(column, center, center);
+
+      .left-block {
+        @include width-height-value(100%, 100%);
+        @include padding-margin(24px, 140px 0 50px);
+      }
+
+      .left-block-title {
+        font-size: 38px;
+        margin: 0;
+      }
+
+      .left-block-description {
+        @include width-value(100%);
+      }
+
+      .right-block {
+        @include width-height-value(100%, 100%);
+        @include flex-container(column, center, center);
+
+        .registration-form {
+          @include flex-container(column, center, center);
+          @include width-value(95%);
+
+          .form-title {
+            font-size: 28px;
+          }
+
+          .form-button {
+            margin: 32px 0 0 0;
+
+          }
+
+          .form {
+            @include width-value(100%);
+            align-items: center;
+
+            .form-input-text {
+              @include width-value(97%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content-block {
+    margin-top: 0;
+    height: 1310px;
+
+    .content-flex-container {
+      @include flex-container(column, center, center);
+
+      .left-block {
+        @include width-value(100%);
+        margin: 90px 0 20px;
+
+        .left-block-title {
+          font-size: $title-font-size;
+          margin: 0;
+        }
+
+        .left-block-description {
+          @include width-value(95%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .content-block {
+    @include width-height-value(100%, 100%);
+
+    .content-flex-container {
+      @include width-value(100%);
+      @include flex-container(column, center, center);
+
+      .left-block {
+        @include width-value(100%);
+        margin: 90px 0 30px;
+
+
+        .left-block-title {
+          font-size: 25px;
+          margin: 0;
+        }
+
+        .left-block-description {
+          @include width-value(100%);
+          font-size: 15px;
+          padding-top: 14px;
+        }
+      }
+
+      .right-block {
+        @include width-value(100%);
+        @include flex-container(column, center, center);
+
+        .registration-form {
+          @include width-value(100%);
+          @include flex-container(column, center, center);
+
+          .form-title {
+            font-size: 20px;
+            margin-bottom: 12px;
+          }
+
+          .form {
+            width: 100%;
+
+            .form-input-text {
+              width: 92%;
+            }
+          }
+
+          .form-button {
+            padding: 20px 45px;
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+}

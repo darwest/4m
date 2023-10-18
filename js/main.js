@@ -1,3 +1,4 @@
+///BURGER MENU
 const menuBurger = document.querySelector('.burger-menu');
 const menuBurgerBlock = document.querySelector('.menu-burger-block');
 const menuHeader = document.querySelector('.header-menu');
@@ -10,8 +11,7 @@ menuBurger.addEventListener('click', () => {
     Header.classList.toggle('active');
 });
 
-
-
+//REGISTRATION FORM
 
 document.addEventListener('DOMContentLoaded', function () {
     const nameInput = document.getElementById('name-input');
@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+///BLOCK COURSES
 window.addEventListener('DOMContentLoaded', () => {
 
     const resizableSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
@@ -151,18 +152,27 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         }
     };
-
+    resizableSwiper(
+        '(max-width: 10000px)',
+        '.slider',
+        {
+            spaceBetween: 10,
+            slidesPerView: 3,
+        },
+        someFunc
+    );
     resizableSwiper(
         '(max-width: 850px)',
         '.slider',
         {
             loop: true,
-            spaceBetween: 20,
+            spaceBetween: 10,
+            infinite: true,
             slidesPerView: 2,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-            },
+            }
         },
         someFunc
     );
@@ -182,10 +192,12 @@ window.addEventListener('DOMContentLoaded', () => {
     );
 });
 
+///BLOCK OUR MENTORS
 document.addEventListener('DOMContentLoaded', function () {
     const mySwiper = new Swiper('.slider-container', {
         slidesPerView: 1,
         spaceBetween: 20,
+        arrows: false,
         loop: true,
         pagination: {
             el: '.swiper-pagination',
@@ -202,19 +214,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//BLOCK RESPONSES
     $(document).ready(function(){
-    $('.slider-response').slick({
-        dots: true, // Показувати крапки-навігацію
-        infinite: true, // Безкінечний слайдер
-        speed: 500, // Швидкість перемикання слайдів (в мілісекундах)
-        slidesToShow: 1, // Кількість видимих слайдів одночасно
-        slidesToScroll: 1 // Кількість слайдів, які перемикаються за один раз
+    $('.sliders').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 10000
     });
 });
-function initMap() {
-    let mapOptions = {
-        center: { lat: 51.5074, lng: -0.1278 }, // Координати центру карти (змініть на свої)
-        zoom: 10, // Рівень зуму
-    };
-    let map = new google.maps.Map(document.getElementById('map'), mapOptions);
-}
+

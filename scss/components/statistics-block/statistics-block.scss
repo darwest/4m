@@ -1,0 +1,33 @@
+@import "../../common/_mixins";
+
+.statistics-block {
+  @include width-height-value(100%, 300px);
+  background-color: $background-blue;
+  @include flex-container(row, center, center);
+
+  .statistics-flex-container {
+    @include flex-container(row, space-around, center);
+
+    .adaptive-container {
+      @include flex-container(row, space-around, center);
+      @include width-value(50%);
+
+      .statistic-item {
+        @include flex-container(column, space-around, center);
+        color: $text-color-white;
+
+        .statistic-number {
+          margin: 8px 0 5px;
+        }
+
+        .statistic-description {
+          margin: 0;
+        }
+
+      }
+    }
+  }
+}
+
+
+@import "statistics-block-media";
