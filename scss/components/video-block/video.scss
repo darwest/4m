@@ -9,7 +9,7 @@
   background-color: $background-grey;
 
   .video-title {
-    margin: 10px 0;
+    margin: 10px 1px;
     @include text-styles($title-font-size, bold, $title-primary-color);
     text-align: center;
   }
