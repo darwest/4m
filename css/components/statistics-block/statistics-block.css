@@ -1,0 +1,86 @@
+.statistics-block {
+  width: 100%;
+  height: 300px;
+  background-color: #3498DB;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.statistics-block .statistics-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.statistics-block .statistics-flex-container .adaptive-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.statistics-block .statistics-flex-container .adaptive-container .statistic-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.statistics-block .statistics-flex-container .adaptive-container .statistic-item .statistic-number {
+  margin: 8px 0 5px;
+}
+.statistics-block .statistics-flex-container .adaptive-container .statistic-item .statistic-description {
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .statistic-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .statistic-item .statistic-description {
+    margin: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .statistics-block {
+    height: 350px;
+  }
+  .statistics-block .container {
+    height: 100%;
+  }
+  .statistics-block .container .statistics-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .statistics-block .container .statistics-flex-container .adaptive-container {
+    width: 100%;
+    height: 100%;
+  }
+  .statistics-block .container .statistics-flex-container .adaptive-container .statistic-item .statistic-description {
+    font-size: 15px;
+  }
+  .statistics-block .container .statistics-flex-container .adaptive-container .statistic-item .statistic-number {
+    margin: 0;
+  }
+}
+@media (max-width: 576px) {
+  .statistic-item {
+    width: 45%;
+  }
+  .statistic-item .statistic-description {
+    font-size: 12px;
+  }
+  .statistic-item .statistic-number {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=statistics-block.css.map */

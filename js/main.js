@@ -124,7 +124,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         breakpoint = window.matchMedia(breakpoint);
 
-        const enableSwiper = function(className, settings) {
+        const enableSwiper = function (className, settings) {
             swiper = new Swiper(className, settings);
 
             if (callback) {
@@ -132,7 +132,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        const checker = function() {
+        const checker = function () {
             if (breakpoint.matches) {
                 return enableSwiper(swiperClass, swiperSettings);
             } else {
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //BLOCK RESPONSES
-    $(document).ready(function(){
+$(document).ready(function () {
     $('.sliders').slick({
         dots: true,
         infinite: true,

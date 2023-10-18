@@ -1,0 +1,48 @@
+@media (max-width: 10000px) {
+  .swiper-pagination {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  .image-slider {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-slider .about-mentor {
+    margin: 0;
+  }
+  .image-slider .about-mentor .name-mentor {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .image-slider .about-mentor p {
+    text-align: center;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .image-slider .about-mentor {
+    margin: 0;
+  }
+  .image-slider .about-mentor .name-mentor {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .image-slider .about-mentor p {
+    text-align: center;
+    margin: 0;
+  }
+}
+@media (max-width: 576px) {
+  .slider-container .slider-title {
+    font-size: 27px;
+  }
+  .img-mentor {
+    width: 150px;
+    height: 150px;
+  }
+}
+/*# sourceMappingURL=slider-mentors-block-media.css.map */

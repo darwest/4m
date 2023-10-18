@@ -1,5 +1,6 @@
 @import "../../common/_mixins";
 @import "../../common/_variables";
+
 @media (max-width: 992px) {
   .header {
     .header-flex-container {
@@ -70,21 +71,23 @@
           top: 0;
           box-shadow: 0 0 10px 4px #d7d7d7;
         }
+
         .menu-list {
           @include flex-container(column, center, center);
           padding: 0;
           margin: 0;
 
-         .menu-item{
+          .menu-item {
             margin: 28px 0 0 0;
             font-size: 18px;
 
             &:last-child {
-              margin: 20px 0 ;
+              margin: 20px 0;
             }
-           &:nth-last-child(2) {
-             margin:20px 0 15px;
-           }
+
+            &:nth-last-child(2) {
+              margin: 20px 0 15px;
+            }
           }
         }
       }

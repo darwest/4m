@@ -1,5 +1,6 @@
 @import "../../common/_mixins";
 @import "../../common/_reset";
+
 .header {
   @include position(fixed);
   @include z-index(100);
@@ -57,7 +58,7 @@
 
           .menu-link-button {
             text-decoration: none;
-            color:$text-color-white;
+            color: $text-color-white;
           }
         }
       }

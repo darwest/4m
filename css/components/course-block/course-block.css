@@ -1,0 +1,103 @@
+.content {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0 50px;
+}
+
+.course-block {
+  width: 100%;
+}
+
+.course-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.course-flex-container .course-block-title {
+  font-size: 34px;
+  font-weight: bold;
+  color: rgba(44, 44, 44, 0.91);
+  letter-spacing: 0.35px;
+  margin: 45px 0 10px;
+  text-align: center;
+}
+.course-flex-container .course-block-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.course-flex-container .course-block-items .course-block-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  text-align: center;
+}
+.course-flex-container .course-block-items .course-block-item .content-card {
+  padding: 20px;
+  min-height: 200px;
+}
+.course-flex-container .course-block-items .course-block-item .content-card .course-item-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgba(56, 56, 56, 0.75);
+  letter-spacing: 0.35px;
+  margin: 19px 0 14px;
+}
+.course-flex-container .course-block-items .course-block-item .content-card .course-item-description {
+  font-size: 15px;
+  font-weight: normal;
+  color: #666666;
+  letter-spacing: 0.35px;
+  width: 95%;
+  margin: 30px 0 20px;
+  line-height: 26px;
+}
+.course-flex-container .course-block-items .course-block-item .content-card .line {
+  background-color: #3497da;
+  width: 100%;
+  height: 1px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  font-size: 0;
+  border: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #AEAEAE;
+  margin: 0 4px;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #666666;
+}
+
+@media (max-width: 10000px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .swiper-pagination {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .course-flex-container .course-block-title {
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=course-block.css.map */

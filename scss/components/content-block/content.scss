@@ -19,8 +19,9 @@
         margin: 0;
         letter-spacing: 2px;
       }
+
       .left-block-description {
-        @include padding-margin(25px 0 0,0);
+        @include padding-margin(25px 0 0, 0);
         font-size: 20px;
         line-height: 35px;
         @include width-value(95%);

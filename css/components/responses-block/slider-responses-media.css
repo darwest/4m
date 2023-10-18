@@ -1,0 +1,91 @@
+@media (max-width: 1200px) {
+  .response-item {
+    height: 220px;
+  }
+}
+@media (max-width: 992px) {
+  .slider-responses {
+    padding: 40px 0 50px;
+  }
+  .slider-responses .slider-response-title {
+    font-size: 28px;
+  }
+  .slider-responses .sliders {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .slider-responses .sliders .slider-block .response-item {
+    height: 250px;
+  }
+  .slider-responses .sliders .slider-block .response-item .quote1 {
+    font-size: 65px;
+    margin: 1px 7px 170px 0;
+  }
+  .slider-responses .sliders .slider-block .response-item .response-text {
+    font-size: 20px;
+  }
+  .slider-responses .sliders .slider-block .response-item .quote2 {
+    font-size: 65px;
+    margin: 170px 7px 1px 0;
+  }
+  .slider-responses .slick-dots {
+    left: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .slider-responses {
+    padding: 40px 0 50px;
+  }
+  .slider-responses .slider-response-title {
+    font-size: 30px;
+  }
+  .slider-responses .sliders {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .slider-responses .sliders .slider-block .response-item {
+    height: 310px;
+  }
+  .slider-responses .sliders .slider-block .response-item .quote1 {
+    font-size: 65px;
+    margin: 1px 7px 220px 0;
+  }
+  .slider-responses .sliders .slider-block .response-item .response-text {
+    font-size: 20px;
+  }
+  .slider-responses .sliders .slider-block .response-item .quote2 {
+    font-size: 65px;
+    margin: 250px 7px 1px 0;
+  }
+  .slider-responses .slick-dots {
+    left: 44%;
+  }
+}
+@media (max-width: 576px) {
+  .slider-responses .slider-response-title {
+    font-size: 25px;
+  }
+  .slider-responses .sliders {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .slider-responses .sliders .slider-block .response-item {
+    height: 280px;
+  }
+  .slider-responses .sliders .slider-block .response-item .quote1 {
+    font-size: 30px;
+    margin: 1px 7px 230px 0;
+  }
+  .slider-responses .sliders .slider-block .response-item .response-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .slider-responses .sliders .slider-block .response-item .quote2 {
+    font-size: 30px;
+    margin: 250px 7px 1px 0;
+  }
+  .slider-responses .slick-dots {
+    left: 39%;
+  }
+}
+/*# sourceMappingURL=slider-responses-media.css.map */

@@ -34,11 +34,13 @@
 @media (max-width: 576px) {
   .footer-block1 {
     @include height-value(264px);
+
     .footer-block-container {
       .adaptive-footer-container {
         &:first-child {
           margin: 26px 6px 10px;
         }
+
         margin: 10px 6px 26px;
         width: 90%;
       }

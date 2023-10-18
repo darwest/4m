@@ -5,15 +5,19 @@
     @include height-value(220px);
   }
 }
+
 @media (max-width: 992px) {
   .slider-responses {
     padding: 40px 0 50px;
-    .slider-response-title{
+
+    .slider-response-title {
       font-size: 28px;
     }
+
     .sliders {
       @include width-value(85%);
       margin: 0 auto;
+
       .slider-block {
 
         .response-item {
@@ -36,11 +40,13 @@
         }
       }
     }
+
     .slick-dots {
       left: 45%;
     }
   }
 }
+
 @media (max-width: 768px) {
   .slider-responses {
     padding: 40px 0 50px;
@@ -81,9 +87,10 @@
     }
   }
 }
+
 @media (max-width: 576px) {
   .slider-responses {
-     .slider-response-title {
+    .slider-response-title {
       font-size: 25px;
     }
 
